@@ -16,8 +16,9 @@ public class SaveData : MonoBehaviour
 
     void Update()
     {
-        
+
     }
+    //save game data
     public void SaveGame()
     {
         PlayerPrefs.SetInt("HighScore", gameManager.PlayerScore);
@@ -29,5 +30,7 @@ public class SaveData : MonoBehaviour
         return PlayerPrefs.GetInt("HighScore"); // Default to 0 if no high score is saved
     }
 
-    
+    //save setting data
+
+
 }
